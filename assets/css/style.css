@@ -483,7 +483,7 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: #588aee; }
 
 .navbar-link.active { color: #588aee; }
 
