@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eleni Kapona - Personal Portfolio</title>
 
+  <!-- Add these links in your <head> section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <!--
     - favicon
   -->
@@ -42,7 +47,7 @@
       <div class="sidebar-info">
 
         <!-- <figure class="avatar-box"> -->
-        <img src="./assets/images/DSC04760.JPG" alt="Eleni Kapona" width="150">
+        <img src="./assets/images/DSC04760.webp" alt="Eleni Kapona" width="150">
         <!-- </figure> -->
 
         <div class="info-content">
@@ -894,6 +899,12 @@
               </a>
             </li>
 
+
+
+
+
+
+
             <li class="project-item  active" data-filter-item data-category="film making">
               <a href="https://youtu.be/hUfqJgp1XHg" target="_blank">
 
@@ -931,6 +942,8 @@
               </a>
             </li>
 
+
+
             <li class="project-item  active" data-filter-item data-category="film making">
               <a href="https://youtu.be/YkVBH9gXgac" target="_blank">
 
@@ -965,43 +978,164 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="photography">
-              <a href="https://drive.google.com/file/d/1U-lsp3n3iMwZVuEQB5GuWLq2wjXraRfT/view?usp=sharing"
-                target="_blank">
+            <!-- Your existing HTML content -->
 
+            <li class="project-item active" data-filter-item data-category="photography">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#first-project-modal">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/IMG2.png">
                 </figure>
-
                 <h3 class="project-title">Micco</h3>
-
                 <p class="project-category">Photography</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="photography">
-              <a href="https://drive.google.com/drive/folders/17MMzb3hXOz62ibugGf4OwsF-Gde2Lc7B?usp=sharing"
-                target="_blank">
+
+            <!-- The custom modal -->
+            <div class="modal fade" id="first-project-modal" tabindex="-1" aria-labelledby="#first-project-modal-label"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom-font">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project-modal-label">Micco</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/images/img34.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <!-- Add more carousel items with different images -->
+                        <div class="carousel-item">
+                          <img src="./assets/images/img3.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img6.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img9.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img12.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img15.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img18.jpg" class="d-block w-100" alt="Image 7">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img22.jpg" class="d-block w-100" alt="Image 8">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img25.jpg" class="d-block w-100" alt="Image 9">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img28.jpg" class="d-block w-100" alt="Image 10">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img31.jpg" class="d-block w-100" alt="Image 11">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/img37.jpg" class="d-block w-100" alt="Image 12">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                      </div>
+                      <a class="carousel-control-prev" href="#project-carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#project-carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <li class="project-item active" data-filter-item data-category="photography">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#second-project-modal">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/beautique.png">
                 </figure>
-
                 <h3 class="project-title">Beautique by Georgia Kapona</h3>
-
                 <p class="project-category">Photography</p>
-
               </a>
             </li>
+
+
+            <!-- The custom modal -->
+            <div class="modal fade" id="second-project-modal" tabindex="-1"
+              aria-labelledby="#second-project-modal-label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom-font">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project-modal-label">Beautique by Georgia Kapona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/images/IMG_0658.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <!-- Add more carousel items with different images -->
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0522.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0548.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0568.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0578.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0585.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0597.jpg" class="d-block w-100" alt="Image 7">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0613.jpg" class="d-block w-100" alt="Image 8">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0627.jpg" class="d-block w-100" alt="Image 9">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0650.jpg" class="d-block w-100" alt="Image 10">
+                        </div>
+
+                        <!-- Add more carousel items as needed -->
+                      </div>
+                      <a class="carousel-control-prev" href="#project-carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#project-carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
             <li class="project-item  active" data-filter-item data-category="ui/ux design">
               <a
@@ -1022,43 +1156,150 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="photography">
-              <a href="https://drive.google.com/drive/folders/1hv92y8IT88P11OuwhZhxrEsAyRAQcaxm?usp=sharing"
-                target="_blank">
+            <li class="project-item active" data-filter-item data-category="photography">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#fourth-project-modal">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/pic2.png">
                 </figure>
-
-                <h3 class="project-title">a Day out</h3>
-
+                <h3 class="project-title">A Day Out</h3>
                 <p class="project-category">Photography</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="photography">
-              <a href="https://drive.google.com/file/d/1sJMW3K0ixFFoqSay7bX9ih5G0Zsj1EQp/view?usp=share_link"
-                target="_blank">
+
+            <!-- The custom modal -->
+            <div class="modal fade" id="fourth-project-modal" tabindex="-1" aria-labelledby="fourth-project-modal-label"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom-font">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project-modal-label">A Day Out</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/images/IMG_0725.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <!-- Add more carousel items with different images -->
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0705.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0712.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0769.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0796.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0800.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0809.jpg" class="d-block w-100" alt="Image 7">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0834.jpg" class="d-block w-100" alt="Image 8">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0849.jpg" class="d-block w-100" alt="Image 9">
+                        </div>
+
+
+                        <!-- Add more carousel items as needed -->
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <li class="project-item active" data-filter-item data-category="photography">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#fifth-project-modal">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project3.png">
                 </figure>
-
-                <h3 class="project-title">Portrtait</h3>
-
+                <h3 class="project-title">Portrait Project</h3>
                 <p class="project-category">Photography</p>
-
               </a>
-            </li>
+            </li> -->
+
+
+            <!-- The custom modal -->
+            <!-- <div class="modal fade" id="fifth-project-modal" tabindex="-1" aria-labelledby="fifth-project-modal-label"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom-font">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project-modal-label">Portrait Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/images/IMG_0658.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0522.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0548.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0568.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0578.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0585.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0597.jpg" class="d-block w-100" alt="Image 7">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0613.jpg" class="d-block w-100" alt="Image 8">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0627.jpg" class="d-block w-100" alt="Image 9">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/IMG_0650.jpg" class="d-block w-100" alt="Image 10">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
             <li class="project-item  active" data-filter-item data-category="game development">
               <a href="https://docs.google.com/presentation/d/1F8knfgUOtrwfbzVoNFWad18WLZHfV6xo/edit?usp=share_link&ouid=117540718359806649886&rtpof=true&sd=true"
@@ -1343,6 +1584,14 @@
 
 
   </main>
+
+
+  <script>
+    // Initialize the carousel when the document is ready
+    document.addEventListener("DOMContentLoaded", function () {
+      new bootstrap.Carousel(document.getElementById("project-carousel"));
+    });
+  </script>
 
 
 
