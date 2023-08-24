@@ -111,10 +111,13 @@
 
 }
 
-
-
-
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body {
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif) !important;
+  
+  --bs-font-monospace: 'VT323', monospace;
+} */
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -266,7 +269,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: #588aee;
+  background: var(--onyx);
   border-radius: 5px;
 }
 
@@ -882,6 +885,8 @@ main {
   margin-bottom: 25px;
 }
 
+
+
 .filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
@@ -897,6 +902,7 @@ main {
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
+
 
 .select-list {
   background: var(--eerie-black-2);
@@ -930,7 +936,7 @@ main {
   border-radius: 8px;
 }
 
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
+.select-item button:hover { color:#588aee; }
 
 .project-list {
   display: grid;
@@ -1618,7 +1624,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     transition: var(--transition-1);
   }
 
-  .filter-item button:hover { color: var(--light-gray-70); }
+  .filter-item button:hover { color:  #588aee; }
 
   .filter-item button.active { color: #588aee; }
 
@@ -1879,4 +1885,30 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+/* Your existing CSS styles */
+
+/* Override Bootstrap modal styles within the custom container */
+.custom-modal-content {
+  font-family: 'Poppins', sans-serif;
+}
+.modal{
+--bs-modal-bg: var(--smoky-black);
+--bs-modal-border-color:white;
+
+/* Additional styling for the modal if needed */
+}
+/* Change the color of the close button */
+.btn-close::before {
+  color: white;
+}
+
+.modal-title{
+  color: white;
+}
+
+/* Apply custom font only to the modal with the specific class */
+.modal-custom-font {
+  font-family: 'Poppins', sans-serif;
 }
