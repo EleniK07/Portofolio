@@ -1912,3 +1912,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 .modal-custom-font {
   font-family: 'Poppins', sans-serif;
 }
+
+ul.service-list{
+  margin:0;
+  padding:0;
+}
+
+ul.navbar-list{
+  margin:0;
+}
+
+ul.contacts-list{
+  margin:0;
+  padding:0;
+}
+
+ol.timeline-list{
+ 
+  padding:0;
+}
+
+ul.project-list{
+ padding:0;
+}
